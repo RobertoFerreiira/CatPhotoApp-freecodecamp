@@ -3,67 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatPhotoApp</title>
+    <title>Document</title>
 </head>
-</style>
 <body>
-    <header>
-        <h1>CatPhotoApp</h1>
-    </header>
     <main>
-        <article>
+        <h1>CatPhotoApp</h1>
+        <section>            
             <h2>Cat Photos</h2>
             <p>See more <a href="#" target="_blank">cat photos</a> in our gallery</p>
-            <img src="./imgs/relaxing-cat.jpg" alt="Cat image">
-        </article>
-        <article>
+            <img src="./imgs/relaxing-cat.jpg" alt="relaxing-cat">
+        </section>
+        <section>
             <h2>Cat Lists</h2>
-            <h3><strong>Things cats love:</strong></h3>
+            <h3>Things cats love:</h3>
             <ul>
                 <li>cat nip</li>
                 <li>laser pointers</li>
-                <li>lasagna</li>                
+                <li>lasagna</li>
             </ul>
-        <picture>
-            <img src="./imgs/lasagna.jpg" alt="lasagna">
-            <figcaption>Cats love lasagna.</figcaption>
-        </picture>
-        </article>
-        <article>
-            <h3>Top 3 things cats hate:</h3>
+            <figure>
+                <img src="./imgs/lasagna.jpg" alt="lasagna">
+                <figcaption>Cats love lasagna</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Top 3 thins cats hate:</h2>
             <ol>
                 <li>flea treatment</li>
                 <li>thunder</li>
                 <li>other cats</li>
             </ol>
-        </article>
-            <picture>
-                <img src="./imgs/cats.jpg" alt="relaxingcats">
-                <figcaption>cats hate other cats.</figcaption>
-            </picture>  
+            <figure>
+                <img src="./imgs/cats.jpg" alt="cats">
+                <figcaption>Cats hate other cats.</figcaption>
+            </figure>
+        </section>
         <section>
             <h2>Cat Form</h2>
-            <form>
-                <fieldset>
-                    <legend>Is your cat an indoor or outdoor cat?</legend>
-                    <input id="indoor" type="radio" name="Indoor" value="indoor" checked=""> Indoor
-                    <input id="indoor-outdoor" type="radio" name="Outdoor" value="Outdoor"> Oudoor
-                </fieldset>
-                <fieldset>
-                        <legend>What is your cat's personality?</legend>
-                        <input type="checkbox" name="Loving" value="Loving" checked> Loving
-                        <input type="checkbox" name="Lazy" value="Lazy"> Lazy
-                        <input type="checkbox" name="Energetic" value="Energetic"> Energetic
-                </fieldset>
-                <fieldset>
-                    <input type="search" name="cat photo URL" placeholder="cat photo URL">
-                    <input type="submit" name="cat photo url">
-                </fieldset>
-            </form>
+            <form action=""></form>
+            <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label>
+                    <input id="indoor" type="radio" name="indor" value="indoor-outdoor"> 
+                    " indoor"
+                </label>
+                <label>
+                    <input id="outdoor" type="radio" name="outdoor" value="indoor-outdoor"> 
+                    " outdoor"
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <input type="checkbox" name="checkbox1" value="" checked> 
+                    " Loving"
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox2" value=""> 
+                    " Lazy"
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox3" value=""> 
+                    " Energetic"
+                </label>
+            </fieldset>
+            <input type="text" name="cat photo url" placeholder="cat photo URL" value="">
+            <button type="submit">Submit</button>
         </section>
-        <footer>
-            <p>No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a></p>
-        </footer>
     </main>
 </body>
 </html>
